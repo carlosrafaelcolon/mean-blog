@@ -1,0 +1,93 @@
+div(ng-class="class")
+	.wrapper
+		img(src="/assets/img/dragon.jpg" class="bg")
+		.main-text
+			img(src="/assets/img/bg-text.png" class="main-img")
+			p.med-text Get in Touch
+			a( class="buttonNav" ng-click="contact = !contact; changeClass()" ) Contact
+			.empty
+	footer
+		p Stay Connected
+		.social-box
+			ul.footer-socials
+				li
+					a(href="#" target="_blank") <i class="fa fa-twitter "></i>
+				li
+					a(href="#" target="_blank") <i class="fa fa-instagram "></i>
+				li
+					a(href="#" target="_blank") <i class="fa fa-github-alt"></i>
+				li
+					a(href="#" target="_blank") <i class="fa fa-linkedin"></i>
+section(id="sidemenu" ng-show="contact")
+			.content
+				h3 C. R. Colon Avalo
+				p is a author, scholar, web developer and hip hop recording artist. Objective analysis, clean code, fresh thinking and good music.  
+					span.separator
+				form(
+					id="contact-form"
+					name="contact-form"
+					method="POST"
+					data-name="Contact Form"
+				)
+					.flex-row
+						.col-full
+							.form-group
+								input(
+								  type='text'
+								  id="name"
+								  class="form form-control"
+								  placeholder="Your Name"
+								  onfocus="this.placeholder = ''"
+								  onblur="this.placeholder = 'Your Name'"
+								  name="name"
+								  data-name="Name"
+								  required=""
+								)
+						.col-full
+							.form-group
+								input(
+								  type="email"
+								  id="email"
+								  class="form form-control"
+								  placeholder="Your Email"
+								  onfocus="this.placeholder = ''"
+								  onblur="this.placeholder = 'Your Email'"
+								  name="email-address"
+								  data-name="Email Address"
+								  required=""
+								)
+						.col-full
+							.form-group
+								input(
+									  type='text'
+									  id="subject"
+									  class="form form-control"
+									  placeholder="Subject"
+									  onfocus="this.placeholder = ''"
+									  onblur="this.placeholder = 'Subject'"
+									  name="subject"
+									  data-name="Subject"
+									  required=""
+									)
+						.col-full
+							.form-group
+								textarea(
+									id="text-area"
+									class="form textarea form-control"
+									placeholder="Your message here..."
+									onfocus="this.placeholder = ''"
+									onblur="this.placeholder = 'Your message here...'"
+									name="message"
+									data-name="Text Area"
+									required=""
+								)
+					button(
+					type="submit"
+					id="send_email"
+					class="c-button c-button--red"
+					)
+						.c-ripple.js-ripple
+							span.c-ripple__circle
+						div Send Message
+					<span id="message"></span>
+button(id="close-more-info" ng-show="contact" ng-click="contact = !contact; changeClass()") <i class="fa fa-times-circle"></i>

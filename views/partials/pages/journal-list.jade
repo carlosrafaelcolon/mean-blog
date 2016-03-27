@@ -1,0 +1,21 @@
+.container#box
+	.wrapper
+		img(src="/assets/img/dragon-4.jpg" class="bg")
+	article(id="blog-index")
+		div(ng-repeat="post in posts | orderBy: 'id' : true ")
+			article.post-list
+				a(href="/journal/{{ posts.indexOf(post) }}")
+					h1 {{post.title}}
+					time {{post.pubDate}}
+	footer
+		p Stay Connected
+		.social-box
+			ul.footer-socials
+				li
+					a(href="#" target="_blank") <i class="fa fa-twitter "></i>
+				li
+					a(href="#" target="_blank") <i class="fa fa-instagram "></i>
+				li
+					a(href="#" target="_blank") <i class="fa fa-github-alt"></i>
+				li
+					a(href="#" target="_blank") <i class="fa fa-linkedin"></i>

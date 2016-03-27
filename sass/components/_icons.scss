@@ -1,0 +1,74 @@
+
+
+
+#close-more-info {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  color: #757A86;
+  font-size: 2em;
+}
+#close-more-info:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+
+// Navigation ICONS
+
+    .close-btn {
+    left: 30px;
+    top: 15px;
+    position: absolute;
+    font-size: 25px;
+  	background: transparent;
+  	color: white;
+    cursor: pointer;
+    
+
+	  @media #{$bp-med} {
+        	font-size: 35px;
+    		
+	       }
+
+	       &:hover {
+	       	  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+	       }
+  
+     }
+
+
+
+#menu {
+	color: $color-prim;
+	left: 30px;
+    top: 15px;
+    position: absolute;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+#menu:hover {
+			  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+
+

@@ -1,0 +1,86 @@
+.container#box
+	.wrapper
+		img(src="/assets/img/sun.jpg" class="bg-2")
+	section.default
+		.content
+			form(
+				id="contact-form"
+				name="contact-form"
+				method="POST"
+				data-name="Contact Form"
+			)
+				.flex-row
+					.inline-flex
+						.col
+							.form-group
+								input(
+									type='text'
+										  id="name"
+										  class="form form-control"
+										  placeholder="Your Name"
+										  onfocus="this.placeholder = ''"
+										  onblur="this.placeholder = 'Your Name'"
+										  name="name"
+										  data-name="Name"
+										  required=""
+								)
+						.col
+							.form-group
+								input(
+									type="email"
+										  id="email"
+										  class="form form-control"
+										  placeholder="Your Email"
+										  onfocus="this.placeholder = ''"
+										  onblur="this.placeholder = 'Your Email'"
+										  name="email-address"
+										  data-name="Email Address"
+										  required=""
+								
+								)
+					.col-full
+						.form-group
+							input(
+								  type='text'
+										  id="subject"
+										  class="form form-control"
+										  placeholder="Subject"
+										  onfocus="this.placeholder = ''"
+										  onblur="this.placeholder = 'Subject'"
+										  name="subject"
+										  data-name="Subject"
+										  required=""
+								
+								)
+					.col-full
+						.form-group
+							textarea(
+								id="text-area"
+										class="form textarea form-control"
+										placeholder="Your message here..."
+										onfocus="this.placeholder = ''"
+										onblur="this.placeholder = 'Your message here...'"
+										name="message"
+										data-name="Text Area"
+										required=""
+								
+							)
+				button( 
+					name='submit', 
+					type='submit', 
+					value='Send', 
+					id='submit',
+					class="c-button c-button--red"
+				) Send Message
+	footer
+		p Stay Connected
+		.social-box
+			ul.footer-socials
+				li
+					a(href="#" target="_blank") <i class="fa fa-twitter "></i>
+				li
+					a(href="#" target="_blank") <i class="fa fa-instagram "></i>
+				li
+					a(href="#" target="_blank") <i class="fa fa-github-alt"></i>
+				li
+					a(href="#" target="_blank") <i class="fa fa-linkedin"></i>

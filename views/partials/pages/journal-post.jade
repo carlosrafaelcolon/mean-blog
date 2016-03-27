@@ -1,0 +1,26 @@
+.container#box
+	article( id="blog-index")
+		hgroup
+			a(href="/journal")
+				h5 <i class="fa fa-long-arrow-left"></i> Return Back
+			time {{postVariable[whichPost].pubDate }}
+			h1 {{postVariable[whichPost].title }}
+			h2.subtitle {{postVariable[whichPost].subtitle }}
+			p.author Carlos R. Colon
+		.page-body(ng-bind-html="postVariable[whichPost].body | renderHTMLCorrectly ")
+		.topics
+			h4.topic Written under:
+			div()
+				a(href="" class="topic") {{postVariable[whichPost].topics }}
+	footer
+		p Stay Connected
+		.social-box
+			ul.footer-socials
+				li
+					a(href="#" target="_blank") <i class="fa fa-twitter "></i>
+				li
+					a(href="#" target="_blank") <i class="fa fa-instagram "></i>
+				li
+					a(href="#" target="_blank") <i class="fa fa-github-alt"></i>
+				li
+					a(href="#" target="_blank") <i class="fa fa-linkedin"></i>

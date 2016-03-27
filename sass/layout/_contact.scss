@@ -1,0 +1,167 @@
+
+/* ------------------------------------- */
+/* 3. More informations ................ */
+/* ------------------------------------- */
+.default {
+  background: $white;
+  border: 5px solid $dark-gray;
+  width: 80%;
+  margin: 0 auto 8px;
+
+}
+
+.default #contact-form .form-control {
+  background: #f2f3f7;
+ 
+}
+
+
+
+.default .content {
+  width: 100%;
+  padding: 5% 10%;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  opacity: 1;
+  visibility: visible;
+}
+
+.default .content h1, .default .content h2, .default .content h3, .default .content h4, .default .content h5, .default .content h6 {
+  color: #757A86;
+}
+.default .content h3 {
+  font-family: Montserrat, "Helvetica Neue", "Lucida Grande", Arial, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.default .content p {
+  color: #747c83;
+}
+
+
+// Contact Styles for Main page
+ 
+#sidemenu { 
+  background: #f2f3f7;
+  border-left: 5px solid #c3c7da;
+  position: absolute;
+  overflow: auto;
+  right: 0;
+  top: 0;
+  width: 35%;
+  height: 100%;
+ transition-duration: .6s;
+  transition-delay: .3s;
+
+  transition-timing-function: ease-out;
+}
+
+#sidemenu .content {
+  width: 100%;
+  padding: 5% 10% 0;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  opacity: 1;
+  visibility: visible;
+}
+#sidemenu .content h1, #sidemenu .content h2, #sidemenu .content h3, #sidemenu .content h4, #sidemenu .content h5, #sidemenu .content h6 {
+  color: #757A86;
+}
+#sidemenu .content h3 {
+  font-family: Montserrat, "Helvetica Neue", "Lucida Grande", Arial, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#sidemenu .content span.separator {
+  display: block;
+  height: 2px;
+  background: #FFFFFF;
+  width: 100%;
+  margin: 30px 0 40px;
+}
+#sidemenu .content p {
+  color: #747c83;
+}
+
+
+
+/* =====================================================
+               CONTACT FORM
+======================================================== */
+
+
+.flex-row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.inline-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.col {
+  flex-grow: 1;
+  margin-bottom: 10px;
+}
+.col:first-child {
+  margin-right: 5px;
+}
+.col-half {
+  width: 45%;
+
+}
+.col-full {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.info-contact {
+  margin-bottom: 30px;
+}
+
+#contact-form {
+  margin-top: 40px;
+}
+#contact-form .form-control {
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  box-shadow: none;
+  font-weight: 400;
+  outline: medium none;
+  height: 40px;
+  width: 100%;
+  color: #000000;
+  -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
+  -moz-transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
+  -ms-transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
+  -o-transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
+  transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
+  text-align: left;
+}
+#contact-form .form-control:hover, #contact-form .form-control:focus {
+  box-shadow: none;
+}
+#contact-form .form-control::-webkit-input-placeholder {
+  color: #747c83 !important;
+}
+#contact-form .form-control::-moz-placeholder {
+  color: #747c83 !important;
+}
+#contact-form .form-control:-moz-placeholder {
+  color: #747c83 !important;
+}
+#contact-form .form-control:-ms-input-placeholder {
+  color: #747c83 !important;
+}
+#contact-form textarea.form-control {
+  min-height: 150px;
+}
+

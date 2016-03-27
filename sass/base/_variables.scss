@@ -1,0 +1,52 @@
+
+// Descriptive color variables
+
+$white          : #fff;
+$gray           : #808080;
+$dark-gray      : #4C4C4C;
+$green		    : #1E7D1E;
+$black	 		: #000000;
+$red-light		: #FF0000;
+$red		    : #ef1414;
+$blue		    : #0000FF;
+$yellow			: #D1D119;
+ 
+// Functional color variables
+
+$color-prim         : $red;
+$color-sec          : $blue;
+
+
+$default			: $gray ;
+$default-hover		: $dark-gray;
+
+$n1: #FFF1F1;
+$n2: #FAE1DE;
+$n3: #F9F5F5;
+
+// Font Stacks
+
+$stack-sans-serif    :   sans-serif;
+$stack-serif         :   serif     ;
+$stack-raleway       :  'Raleway', $stack-sans-serif ;
+$stack-roboto	     :	'Roboto', $stack-sans-serif ;
+$stack-Open	    	 :	'Open Sans', $stack-sans-serif ;
+
+
+// Media Query Breakpoints
+
+
+$brk-tablet	  :   '(min-width: 768px)' ;
+$brk-desktop  :   '(min-width: 1025px)' ;
+
+$bp-sm        : ' (min-width: 1px)  and (max-width: 768px)';
+$bp-med       :  '(min-width: 769px)' ; 
+$bp-large     :  '(min-width: 1025px)' ;
+
+$breakpoint-smallest: 320px;
+$breakpoint-small: 480px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 1024px;
+$breakpoint-largest: 1440px;
+
+

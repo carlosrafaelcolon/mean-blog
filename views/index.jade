@@ -1,0 +1,10 @@
+doctype html
+html(lang="en" ng-app="Blog")
+	include ./partials/_head.jade
+	body
+		include ./partials/_header.jade
+		<ng-view></ng-view>
+		// 	compiled jquery
+		script(src="/assets/js/jquery-merge.min.js")
+		// 	compiled angular
+		script(src="/assets/js/angular-merge.js")

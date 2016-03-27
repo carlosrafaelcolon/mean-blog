@@ -1,0 +1,64 @@
+// Nav Styling
+
+
+.main-nav {
+	
+    width: 75%;
+    padding: 1.65em;
+    margin: 0 auto;
+    height: 100%;
+      display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+.main-nav li {
+	background: transparent;
+	 flex-grow: 1;
+
+}
+
+.main-nav li a {
+	color: $white;
+	font-weight: bold;
+	display: block;
+	background: transparent;
+	font-size: 20px;
+  text-transform: uppercase;
+	  @media #{$bp-med} {
+        	font-size: 25px;
+       }
+
+}
+
+
+.main-nav li a:hover {
+	   -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+	color: $yellow;
+}
+
+
+#overlay {
+  background:rgba(239,20,20, 0.9);
+  width:100%;
+  height:100%;
+  position: fixed;
+  top:0;
+  left:0;
+  display:none;
+  z-index: 999;
+  text-align:center;
+  padding: .25em;
+ 	margin: 0;
+
+
+
+
+
+  }
+  
+ 
